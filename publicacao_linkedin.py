@@ -54,13 +54,14 @@ driver.get('https://www.linkedin.com/home')
 
 # Clicar e digitar o login
 campo_usuario = wait.until(condicao_esperada.element_to_be_clickable((By.XPATH, "//input[@id='session_key']")))
-usuario = 'willsantos.edf@gmail.com'
+usuario = usuario = 'seu_usuario'
+
 digitar_naturalmente(usuario, campo_usuario)
 sleep(4)
 
 # Clicar e digitar a senha
 campo_senha = wait.until(condicao_esperada.element_to_be_clickable((By.XPATH, "//input[@id='session_password']")))
-senha = '#Willi@m86'
+senha = 'sua_senha'
 digitar_naturalmente(senha, campo_senha)
 sleep(3)
 
